@@ -47,6 +47,20 @@ const routes: Routes = [
   {
     path: 'my-cart',
     loadChildren: () => import('./my-cart/my-cart.module').then( m => m.MyCartPageModule)
+  },
+  {
+    path: 'wash-location',
+    loadChildren: () => import('./wash-location/wash-location.module').then( m => m.WashLocationPageModule)
+  },
+  
+  {
+    path: 'wash-products',
+    loadChildren: () => import('./wash-products/wash-products.module').then( m => m.WashProductsPageModule)
+  },
+  
+  {
+    path: 'cleaning-supplies',
+    loadChildren: () => import('./cleaning-supplies/cleaning-supplies.module').then( m => m.CleaningSuppliesPageModule)
   }
 ];
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-cars',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsPage implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+  nextpage() {
+    this.route.navigate(['/home/wash-location']);
+  }
+
+  nextfinalpage() {
+    this.route.navigate(['/home/wash-products']);
+  }
 
   ngOnInit() {
   }
