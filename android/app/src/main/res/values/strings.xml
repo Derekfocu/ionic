@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">myFinal</string>
+    <string name="title_activity_main">myFinal</string>
+    <string name="package_name">Derek.myFinal</string>
+    <string name="custom_url_scheme">Derek.myFinal</string>
+</resources>
