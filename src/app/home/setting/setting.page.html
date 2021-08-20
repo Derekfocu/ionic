@@ -16,8 +16,7 @@
     
     
 
-    <button ion-item (click)="nextpage()">Personal</button>
-    <ion-item>
+    <ion-item (click)="nextpage()">    
       <ion-label>Personal Assets
       </ion-label>>
     </ion-item>
@@ -52,9 +51,13 @@
         <ion-toggle  slot="end" (ionChange)='toggleTheme($event)'></ion-toggle>
       </ion-item>
 
-      <ion-item>
-        <ion-label>About</ion-label>>
+      <ion-item (click)="nextfinalpage()">    
+        <ion-label>About
+        </ion-label>>
       </ion-item>
+
+      
+      
       
       <ion-button expand="block" (click)="presentModal()" color="danger">logg out</ion-button>
     

@@ -1,24 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button color="primary" class="backbtn" routerLink="/home" routerDirection="back">
+    <ion-title>會員資料</ion-title>
+    <ion-button slot="start">
+      <ion-button color="primary" class="backbtn" routerLink="/home/setting" routerDirection="back">
         <img src='../../assets/back-dark.svg' />
+        
       </ion-button>
-      <ion-buttons slot="end">
-        <ion-item fill="clear">Back</ion-item>
-       </ion-buttons>
-    </ion-buttons>
-
-    <ion-buttons slot="end">
-      <ion-button class="notification">
-        <ion-icon name="notifications-outline" color="dark"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+  </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h1 class="title">Account</h1>
 
   <div class="profile-info">
     <ion-item>
@@ -47,7 +39,7 @@
     </ion-item>
   </div>
 
-  <ion-button expand="block" (click)="presentModal()" color="danger">Save</ion-button>
-  <ion-button expand="block" (click)="presentModal()" color="danger">Edit</ion-button>
+  <ion-button expand="block" (click)="presentModal()" color="success" >儲存</ion-button>
+  <ion-button expand="block" (click)="presentModal()" color="warning" >編輯</ion-button>
 
 </ion-content>

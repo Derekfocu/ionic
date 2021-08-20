@@ -61,6 +61,18 @@ const routes: Routes = [
   {
     path: 'cleaning-supplies',
     loadChildren: () => import('./cleaning-supplies/cleaning-supplies.module').then( m => m.CleaningSuppliesPageModule)
+  },
+  {
+    path: 'route-planning',
+    loadChildren: () => import('./route-planning/route-planning.module').then( m => m.RoutePlanningPageModule)
+  },
+  {
+    path: 'vacancy-search',
+    loadChildren: () => import('./vacancy-search/vacancy-search.module').then( m => m.VacancySearchPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
   }
 ];
 

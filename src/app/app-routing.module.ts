@@ -26,6 +26,10 @@ loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
     path: 'welcome',
     loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
   },
+  {
+    path: 'sky-weather',
+    loadChildren: () => import('./sky-weather/sky-weather.module').then( m => m.SkyWeatherPageModule)
+  },
 
 ];
 @NgModule({

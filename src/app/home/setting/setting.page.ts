@@ -15,6 +15,10 @@ export class SettingPage implements OnInit {
     this.route.navigate(['/home/profile']);
   }
 
+  nextfinalpage() {
+    this.route.navigate(['/home/about-us']);
+  }
+
   ngOnInit() {
   }
 
