@@ -19,6 +19,10 @@ export class SettingPage implements OnInit {
     this.route.navigate(['/home/about-us']);
   }
 
+  presentModal() {
+    this.route.navigate(['/welcome']);
+  }
+
   ngOnInit() {
   }
 
