@@ -73,6 +73,10 @@ const routes: Routes = [
   {
     path: 'about-us',
     loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
+  },
+  {
+    path: 'wash-location-detail',
+    loadChildren: () => import('./wash-location-detail/wash-location-detail.module').then( m => m.WashLocationDetailPageModule)
   }
 ];
 

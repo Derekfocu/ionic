@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-wash-location',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WashLocationPage implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+  nextpage() {
+    this.route.navigate(['/home/wash-location-detail']);
+  }
 
   ngOnInit() {
   }
