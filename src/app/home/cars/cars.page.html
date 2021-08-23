@@ -3,8 +3,8 @@
     <ion-title >速洗車車</ion-title>
     <ion-buttons slot="end">
       <ion-button class="notification">
-        <ion-icon name="notifications-outline" color="dark"></ion-icon>
-        <span>&nbsp;</span>
+        <ion-icon name="notifications-outline"></ion-icon>
+          <span>&nbsp;</span>
       </ion-button>
       
     </ion-buttons>
@@ -12,24 +12,24 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-content fullscreen class="ion-padding">
-      <ion-list>
-      <ion-button expand="block" size="large" (click)="nextpage()">附近洗車場位置</ion-button>
+
+  <img src="../../assets/wash car-1.jpg" class="logo" />
+
+     <div class="wrapper">
+       <div class="box">
+      <ion-button expand="block" size="large" class="button" (click)="nextpage()">附近洗車場位置</ion-button>
     
+    
+          <ion-button expand="block" size="large" class="button" (click)="nextsecondpage()">空位搜尋</ion-button>
 
-      <ion-row style="height: h"></ion-row>
-          <ion-button expand="block" size="large" (click)="nextsecondpage()">空位搜尋</ion-button>
 
-          <ion-row style="height: h"></ion-row>
+          <ion-button expand="block" size="large" class="button" (click)="nextthirdpage()">路線規劃</ion-button>
 
-          <ion-button expand="block" size="large" (click)="nextthirdpage()">路線規劃</ion-button>
 
-          <ion-row style="height: h"></ion-row>
+            <ion-button expand="block" size="large" class="button" (click)="nextfourpage()">天氣查詢</ion-button>
+          </div>
+      </div>
+            
 
-            <ion-button expand="block" size="large" (click)="nextfourpage()">天氣查詢</ion-button>
-
-            <ion-row style="height: h"></ion-row>
-              <ion-button expand="block" size="large" (click)="nextfinalpage()">洗車用品</ion-button>
-            </ion-list>
-          </ion-content>
+      
 </ion-content>
